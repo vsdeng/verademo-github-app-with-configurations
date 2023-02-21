@@ -1,15 +1,13 @@
 veracode-sast-pipeline-scan:
-  push:
-    branches:
-      - bug-fix/*
-      - feature/*
-    break_build: true
-    policy: verademo
-    create_issues: false
-    create_check_annotations: true
-    compilation: 'mvn clean package'
-    os-image: 'image name'
-  workflow_run_complete:
-    workflow_name:
-      - build
-    break_build: false
+  branches:
+    - bug-fix/*
+    - feature/*
+  break_build: true
+  policy: verademo
+  create_issues: false
+  create_checks: true
+  create_checks_annotations: true
+  compilation: 'mvn clean package'
+  os-image: 'image name'
+  compile_locally: true
+  local_compliation_workflow: build.xml
