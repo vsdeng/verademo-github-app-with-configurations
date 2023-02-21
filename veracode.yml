@@ -1,4 +1,4 @@
-veracode-sast-pipeline-scan:
+veracode_sast_pipeline_scan:
   branches:
     - bug-fix/*
     - feature/*
