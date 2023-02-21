@@ -8,6 +8,6 @@ veracode-sast-pipeline-scan:
   create_checks: true
   create_checks_annotations: true
   compilation: 'mvn clean package'
-  os-image: 'image-name'
+  os-image: 'os-image-name'
   compile_locally: true
   local_compliation_workflow: build.xml
