@@ -1,0 +1,15 @@
+veracode-sast-pipeline-scan:
+  push:
+    branches:
+      - bug-fix/*
+      - feature/*
+    break_build: true
+    policy: verademo
+    create_issues: false
+    create_check_annotations: true
+    compilation: 'mvn clean package'
+    os-image: 'image name'
+  workflow_run_complete:
+    workflow_name:
+      - build
+    break_build: false
