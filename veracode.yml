@@ -37,7 +37,7 @@ veracode_sca_scan:
   # Entering both will only execute branches_to_run
   # Leaving them both blank means this will never run
   branches_to_run:
-    - *
+    - "*"
   branches_to_exclude:
   break_build: true
   policy: verademo
@@ -54,7 +54,7 @@ veracode_container_security_scan:
   # Entering both will only execute branches_to_run
   # Leaving them both blank means this will never run
   branches_to_run:
-    - *
+    - "*"
   branches_to_exclude:
   break_build: true
   policy: verademo
