@@ -19,8 +19,6 @@ veracode_sast_policy_scan:
   branches_to_run:
     - main
   branches_to_exclude:
-    - bug-fix/*
-    - feature/*
   break_build: true
   policy: verademo
   create_issues: false
