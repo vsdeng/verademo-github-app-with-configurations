@@ -20,6 +20,7 @@ jobs:
         scan_type: ${{ github.event.action }}
 
   build:
+    needs: register
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
