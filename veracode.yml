@@ -1,8 +1,10 @@
 veracode_sast_pipeline_scan:
+  # Please only specify either branches_to_run or branches_to_exclude
+  # Entering both will only execute branches_to_run
+  # Leaving them both blank means this will never run
   branches_to_run:
-    - bug-fix/*
-    - feature/*
   branches_to_exclude:
+    - main
   break_build: true
   policy: verademo
   create_issues: false
@@ -10,10 +12,13 @@ veracode_sast_pipeline_scan:
   create_checks_annotations: true
   compilation: 'mvn clean package'
   os-image: 'os-image-name'
-  compile_locally: true
+  compile_locally: false
   local_compliation_workflow: build.xml
-  
+
 veracode_sast_policy_scan:
+  # Please only specify either branches_to_run or branches_to_exclude
+  # Entering both will only execute branches_to_run
+  # Leaving them both blank means this will never run
   branches_to_run:
     - main
   branches_to_exclude:
