@@ -1,4 +1,10 @@
-on: workflow_dispatch
+name: Veracode Build Artifact
+
+run-name: Veracode Build Artifact
+
+on:
+  repository_dispatch:
+    types: [veracode-build]
 
 jobs:
   build:
