@@ -57,7 +57,6 @@ veracode_container_security_scan:
   branches_to_exclude:
   break_build: true
   create_issues: false
-  create_checks: true
   create_checks_annotations: true
   compilation: 'mvn clean package'
   os-image: 'os-image-name'
