@@ -50,7 +50,7 @@ veracode_sast_policy_scan:
   create_checks_annotations: true
   compilation: 'mvn clean package'
   os-image: 'os-image-name'
-  compile_locally: true
+  compile_locally: false
   local_compilation_workflow: veracode-build
 
 veracode_sca_scan:
