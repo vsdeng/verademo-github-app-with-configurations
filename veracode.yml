@@ -93,6 +93,6 @@ veracode_container_security_scan:
       - open
       - synchronize
     target_branch:
-      - main
+      - default_branch
   break_build: true
   create_issues: false
