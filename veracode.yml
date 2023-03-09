@@ -88,7 +88,7 @@ veracode_container_security_scan:
       - "*"
     branches_to_exclude:
   pull_request:
-    trigger: true
+    trigger: false
     action:
       - open
       - synchronize
