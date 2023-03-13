@@ -34,7 +34,7 @@ To build Verademo [Maven](https://maven.apache.org) is required.
 
 `mvn package` will build the web application and output a war file to `target/verademo.war`. This war file can be uploaded to Veracode for static analysis.
 
-## Configure
+## Configureawef
 
 To run Verademo [MySQL](https://www.mysql.com/) and [Tomcat](https://tomcat.apache.org/) are required.
 
