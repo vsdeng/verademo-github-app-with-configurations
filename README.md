@@ -9,18 +9,18 @@ Blab-a-Gag is a fairly simple forum type application which allows:
  - users to comment on other users messages (heckle)
  
 ### URLs
-
+  
 `/reset` will reset the data in the database with a load of:
  - users
  - jokes
  - heckles
-  
-`/feed` shows the jokes/heckles that are relevant to the current user.
+  awefasdf
+`/feed` shows the jokawefes/heckles that are relevant to the current user.
 
 `/blabbers` shows a list of all other users and allows the current user to listen or ignore.
 
 `/profile` allows the current user to modify their profile.
-
+awef
 `/login` allows you to log in to your account
 
 `/register` allows you to create a new user account
